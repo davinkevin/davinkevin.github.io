@@ -1,0 +1,21 @@
+<md-sidenav-layout class="app-root" fullscreen>
+  <md-sidenav #start>
+    <md-nav-list>
+      <a md-list-item *ngFor="let theme of themes">
+        <md-icon class="md-24" >{{ theme.icon }}</md-icon> {{ theme.name }}
+      </a>
+    </md-nav-list>
+  </md-sidenav>
+
+  <md-toolbar color="primary">
+    <button md-icon-button (click)="start.open()">
+      <md-icon class="md-24" >menu</md-icon>
+    </button>
+    <div class="demo-toolbar">
+      <h1>{{ name }} - Under construction...</h1>
+    </div>
+  </md-toolbar>
+
+</md-sidenav-layout>
+
+<img src="images/cover.bubbles.jpg" alt="cover" width="100%" height="100%">

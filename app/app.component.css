@@ -1,26 +1,24 @@
-.app-root {
-    font-family: Roboto, 'Helvetica Neue', sans-serif; }
-.app-root * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-.app-root md-sidenav {
-    min-width: 15%; }
-.app-root md-sidenav [md-button] {
+md-sidenav {
+  min-width: 15%; }
+  md-sidenav [md-button] {
     width: 100%;
     position: relative;
     bottom: 0;
     margin: 24px 0; }
-.app-root .demo-content {
-    padding: 32px; }
-.app-root md-toolbar md-icon {
-    cursor: pointer; }
-.app-root md-toolbar .demo-toolbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%; }
-.app-root h1 {
-    font-size: 20px;  }
+
+.demo-content {
+  padding: 32px; }
+
+md-toolbar md-icon {
+  cursor: pointer; }
+
+md-toolbar .toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+h1 {
+  font-size: 20px; }
+  h1 a {
+    text-decoration: none;
+    color: white; }

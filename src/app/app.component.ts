@@ -19,10 +19,10 @@ export class AppComponent implements OnInit {
   name = 'DAVIN Kevin';
   themes: Array<Theme>;
 
-
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(): any {
     this.themes = this.themeService.findAll();
   }
+
 }

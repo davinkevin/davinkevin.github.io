@@ -1,34 +1,36 @@
-md-sidenav {
-  min-width: 15%;
+md-sidenav-layout.app-root {
+  md-sidenav {
+    min-width: 15%;
 
-  [md-button] {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    margin: 24px 0;
-  }
-}
+    [md-button] {
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      margin: 24px 0;
+    }
 
-.demo-content {
-  padding: 32px;
-}
-
-md-toolbar {
-  md-icon {
-    cursor: pointer;
+    md-icon {
+      padding-right: 8px;
+    }
   }
 
-  .toolbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
+  md-toolbar {
+    md-icon {
+      cursor: pointer;
+    }
 
-h1 {
-  font-size: 20px;
-  a {
-    text-decoration: none;
-    color : white;
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color : white;
+    }
   }
 }

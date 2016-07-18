@@ -1,23 +1,56 @@
 md-sidenav-layout.app-root md-sidenav {
-  min-width: 15%; }
-  md-sidenav-layout.app-root md-sidenav [md-button] {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    margin: 24px 0; }
-  md-sidenav-layout.app-root md-sidenav md-icon {
-    padding-right: 8px; }
+  display: flex;
+  flex-direction: column;
+  min-width: 15%;
+  justify-content: space-between; }
+  md-sidenav-layout.app-root md-sidenav .user {
+    flex: 5;
+    background-image: url("images/material-design-background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column; }
+    md-sidenav-layout.app-root md-sidenav .user div.avatar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 8;
+      padding-left: 1em; }
+      md-sidenav-layout.app-root md-sidenav .user div.avatar img {
+        background-color: white;
+        border-radius: 50%; }
+    md-sidenav-layout.app-root md-sidenav .user div.name {
+      flex: 3;
+      padding-left: 1em;
+      color: white; }
+  md-sidenav-layout.app-root md-sidenav md-nav-list {
+    flex: 20; }
+    md-sidenav-layout.app-root md-sidenav md-nav-list [md-button] {
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      margin: 24px 0; }
+    md-sidenav-layout.app-root md-sidenav md-nav-list md-icon {
+      padding-right: 8px; }
+  md-sidenav-layout.app-root md-sidenav .social-links {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    md-sidenav-layout.app-root md-sidenav .social-links md-icon {
+      font-size: x-large;
+      text-decoration: none;
+      color: black; }
 
 md-sidenav-layout.app-root md-toolbar md-icon {
+  font-size: x-large;
   cursor: pointer; }
 
 md-sidenav-layout.app-root md-toolbar .toolbar {
   display: flex;
   justify-content: space-between;
   width: 100%; }
-
-md-sidenav-layout.app-root h1 {
-  font-size: 20px; }
-  md-sidenav-layout.app-root h1 a {
-    text-decoration: none;
-    color: white; }
+  md-sidenav-layout.app-root md-toolbar .toolbar h1 {
+    font-size: 20px; }
+    md-sidenav-layout.app-root md-toolbar .toolbar h1 a {
+      text-decoration: none;
+      color: white; }

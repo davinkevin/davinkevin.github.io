@@ -1,13 +1,14 @@
 md-sidenav-layout.app-root {
+
   md-sidenav {
     display: flex;
     flex-direction: column;
-    min-width: 15%;
+    min-width: 15em;
     justify-content : space-between;
 
     .user {
       flex : 5;
-      background-image: url("images/material-design-background.jpg");
+      background-image: url("images/material-design-background.mini.png");
       background-size: cover;
       display: flex;
       flex-direction: column;
@@ -34,7 +35,7 @@ md-sidenav-layout.app-root {
     }
 
     md-nav-list {
-
+      padding-top: 0;
       flex : 20;
 
       [md-button] {
@@ -83,6 +84,5 @@ md-sidenav-layout.app-root {
 
     }
   }
-
 
 }

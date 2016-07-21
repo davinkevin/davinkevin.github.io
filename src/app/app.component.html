@@ -2,19 +2,19 @@
   <md-sidenav #start>
 
     <div class="user">
-      <div class="avatar"><img src="https://www.gravatar.com/avatar/477389c44ffb21d82a4e05dd46f8aaa2" alt="avatar" width="50" height="50"></div>
-      <div class="name">{{ name }}</div>
+      <div [routerLink]="['/']" class="avatar"><img src="https://www.gravatar.com/avatar/477389c44ffb21d82a4e05dd46f8aaa2" alt="avatar" width="50" height="50"></div>
+      <div [routerLink]="['/']" class="name">{{ name }}</div>
     </div>
 
     <md-nav-list>
-      <a md-list-item *ngFor="let theme of themes">
+      <a md-list-item [routerLink]="[ theme.link ]" *ngFor="let theme of themes">
         <md-icon class="md-24">{{ theme.icon }}</md-icon> {{ theme.name }}
       </a>
     </md-nav-list>
 
     <div class="social-links">
-      <a md-list-item *ngFor="let link of socials" [href]="link.link" target="_blank" [title]="link.name">
-        <md-icon class="md-24" fontSet="fa" [fontIcon]="link.icon"></md-icon>
+      <a md-list-item *ngFor="let social of socials" [href]="social.link" target="_blank" [title]="social.name">
+        <md-icon class="md-24" fontSet="fa" [fontIcon]="social.icon"></md-icon>
       </a>
     </div>
 
@@ -25,7 +25,7 @@
       <md-icon class="md-24" >menu</md-icon>
     </button>
     <div class="toolbar">
-      <h1>{{ name }} - Under construction...</h1>
+      <h1 [routerLink]="['/']">{{ name }} - Under construction...</h1>
 
       <h1>
         <a href="https://github.com/davinkevin/" target="_blank">
@@ -35,6 +35,9 @@
     </div>
   </md-toolbar>
 
+  <router-outlet></router-outlet>
+
 </md-sidenav-layout>
 
-<img src="images/cover.bubbles.jpg" alt="cover" width="100%" height="100%">
+<!--<img src="images/cover.bubbles.jpg" alt="cover" width="100%" height="100%">-->
+

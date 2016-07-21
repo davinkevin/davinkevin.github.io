@@ -15,8 +15,8 @@ export class SocialService {
     return [
       { 'name' : 'GitHub', 'icon' : 'fa-github', 'link' : 'https://github.com/davinkevin' },
       { 'name' : 'Twitter', 'icon' : 'fa-twitter', 'link' : 'https://twitter.com/davinkevin' },
-      { 'name' : 'LinkedIn', 'icon' : 'fa-linkedin', 'link' : 'publichttps://fr.linkedin.com/in/kevin-davin-a8668a11' }
-    ]
+      { 'name' : 'LinkedIn', 'icon' : 'fa-linkedin', 'link' : 'https://fr.linkedin.com/in/kevin-davin-a8668a11' }
+    ];
   }
 
 }

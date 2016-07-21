@@ -1,0 +1,23 @@
+<div class="container">
+
+  <md-card *ngFor="let exp of experiences">
+
+    <md-card-header>
+      <img md-card-avatar [src]="exp.context.url">
+      <md-card-title>{{ exp.context.name }}</md-card-title>
+      <md-card-subtitle>{{ exp.title }}</md-card-subtitle>
+    </md-card-header>
+
+    <img md-card-image [src]=" exp.image ">
+
+    <md-card-content>
+      <p>{{ exp.description }}</p>
+    </md-card-content>
+
+    <md-card-actions>
+      <link-card-button [link]="exp.link"></link-card-button>
+    </md-card-actions>
+
+  </md-card>
+
+</div>

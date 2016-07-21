@@ -34,6 +34,9 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
+    'app/extras',
+    'app/home',
+    'app/shared/link-card-button/link-card-button',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

@@ -1,0 +1,15 @@
+.container {
+  padding-left: 1em;
+  padding-top: 1em;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .container md-card {
+    flex: 1;
+    margin: 0 16px 16px 0;
+    max-width: 400px;
+    min-width: 210px; }
+    .container md-card img.md-card-image {
+      background-color: gray;
+      max-width: 300px; }
